@@ -14,16 +14,107 @@ body {
   overflow-x: hidden;
 }
 
+/* ///////////////////////////// VIDEO ///////////////////////////////// */
+
+#myVideo {
+  /*min-width: 100%;
+  min-height: 100%; */
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.overlay-home{
+  background-color: rgba(46, 64, 87, 0.371);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0;
+
+}
+
+/* .slogan{
+
+} */
+.container-btn{
+  position: fixed;
+  bottom: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:flex-end;
+  margin-right: 3rem;
+  /* margin-left: 55rem;
+  margin-top: 10rem; */
+}
+
+.btn-appel-action{
+  display: inline-block;
+  width: 21rem;
+  margin: 10px 20px 10px 20px;
+  text-align: center;
+  border: 1px solid #ffffff8f;
+  color: rgb(253, 253, 253);
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 5px 10px 5px 10px;
+  transition: .7s ease-in-out;
+}
+
+.btn-appel-action:hover{
+  color: #42766C;
+  background-color: #f0f0f065;
+}
+
+/* ************************************************************************* */
+
+#navigation{
+  position: fixed;
+  z-index: 140;
+  width: 100%;
+  background-color: #ebebeb94;
+  text-align: center;
+  height: 10rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 55% 70%, 50% 90%, 45% 70%, 0% 70%);
+  transition: all 0.4s ease-in-out;
+  /* Anim GreenSock */
+  opacity: 1;
+}
+
+#navigation a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  line-height: 6.5rem;
+  font-family: 'Kaushan Script', cursive;
+  margin: auto;
+  color: #373737;
+}
+
+#navigation a:active{
+  font-size: 4rem;
+}
+
+.icon{
+  display: none;
+  
+}
 .logo {
   position: absolute;
   top: 10px;
   left: 10px;
   display: flex;
   align-items: center;
+  z-index: 999;
 }
 
 .logo img {
-  height: 9rem;
+  height: 5rem;
 }
 
 .logo h1 {
@@ -99,7 +190,7 @@ body {
 }
 
 /* Rideau */
-
+/* 
 nav {
   position: fixed;
   width: 100%;
@@ -125,7 +216,7 @@ nav a {
   display: block;
   margin: 10px 0;
   text-decoration: none;
-}
+} */
 
 /* ***************************************** */
 .products {
