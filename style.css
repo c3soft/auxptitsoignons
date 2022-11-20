@@ -24,18 +24,25 @@ body {
 
 .construct{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 20rem;
 }
-.title-construct{
+.construct h1{
   font-size: 5.5rem;
-  /* text-align: center; */
-
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
   color: #e15e5ebc;
 }
+
+.construct h2{
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  color: #2f2f2fbc;
+}
+
 /* ///////////////////////////// HOME PAGE ///////////////////////////////// */
 
 #myVideo {
@@ -619,3 +626,18 @@ nav a {
     transform: translateX(2500px);
   } 
 } */
+
+.container-list{
+  background: #0099ff;
+  margin: 2rem 4rem 0 4rem;
+}
+
+.product-list{
+  display: flex;
+  width: 100%;
+  background: #e53d8e;
+}
+
+.product-list img{
+  width: 10rem;
+}
