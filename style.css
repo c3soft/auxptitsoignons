@@ -641,3 +641,93 @@ nav a {
 .product-list img{
   width: 10rem;
 }
+
+
+/* ///////////////////////////////////////// CONTACT ///////////////////////////////// */
+.container-contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  margin-top: 6rem;
+}
+
+.form-bloc h3{
+  color:var(--orange-charte);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-bloc .form-group{
+  position: relative;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.form-bloc .form-group label{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 20px;
+  transition: 0.4s ease-out;
+}
+
+.form-bloc .form-group input{
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 20px;
+  transition: 0.4s ease-out;
+}
+
+.form-bloc .form-group .btn-submit{
+  display: block; 
+  width: 21rem;
+   text-align: center;
+ border: 1px solid #8b89898f;
+  font-family: 'Roboto', sans-serif;
+  color: #555555;
+  border-radius: 5px;
+   text-decoration: none;
+  font-size: 2rem;
+  padding: 5px 10px 5px 10px;
+  transition: .7s ease-in-out; /* */
+}
+
+.form-bloc .form-group .btn-submit:hover{
+  font-weight: 900;
+  color: var(--orange-charte);
+  background-color: #b1757542;
+}
+
+/* animation */
+.form-bloc .form-group:focus-within label,
+.form-bloc .form-group.animation label{
+  top: 0;
+  transform: translateY(-100%);
+  color: red;
+}
+
+.form-bloc .form-group:focus-within input,
+.form-bloc .form-group.animation input{
+  border-bottom-color: green;
+}
+/* https://www.youtube.com/watch?v=4MbUji4xofA */
+/* 22.50 */
+
+
+/* **********map */
+.map { 
+  width: 50%;
+  /* margin: 10rem; */
+
+}
+.maCarte{
+  height: 75vh;
+}
