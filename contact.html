@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin="" />
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,56 +23,57 @@
                 </div>
             </a>
             <div class="menu">
-                <a href="https://c3soft.github.io/auxptitsoignons/index.html" class="lienNav" onclick="toggleNav()">Accueil</a>
-                <a href="https://c3soft.github.io/auxptitsoignons/about.html" class="lienNav" onclick="toggleNav()">Nos valeurs</a>
-                <a href="https://c3soft.github.io/auxptitsoignons/products.html" class="lienNav" onclick="toggleNav()">Nos produits</a>
-                <a href="/contact.html" class="lienNav" onclick="toggleNav()">Contact</a>
+                <a href="https://c3soft.github.io/auxptitsoignons/index.html" class="lienNav"
+                    onclick="toggleNav()">Accueil</a>
+                <a href="https://c3soft.github.io/auxptitsoignons/about.html" class="lienNav" onclick="toggleNav()">Nos
+                    valeurs</a>
+                <a href="https://c3soft.github.io/auxptitsoignons/products.html" class="lienNav"
+                    onclick="toggleNav()">Nos produits</a>
+                <a href="https://c3soft.github.io/auxptitsoignons/contact.html" class="lienNav" onclick="toggleNav()">Contact</a>
                 <a href="#" class="lienNav" onclick="toggleNav()">Connexion</a>
                 <!-- <a class="icon" id="icon" onclick="toggleNav()"><i class="fas fa-bars"></i></a> -->
             </div>
-          </nav>
-
-        
+        </nav>
     </header>
-    
- <div class="container-contact">
 
-  
-<div class="box-mail">
-    <form action="" class="form-bloc">
-        <h3>Contactez-nous</h3>
-        <div class="form-group">
-            <label for="firstName">Prénom</label>
-            <input type="text" id="firstName" required>
-        </div>
-        <div class="form-group">
-            <label for="lastName">Nom</label>
-            <input type="text" id="lastName" required>
-        </div>
-        <div class="form-group">
-            <label for="mail">Votre email</label>
-            <input type="email" id="mail" required>
+    <div class="container-contact">
+        <div class="box-mail">
+            <form action="" class="form-bloc">
+                <h3>Contactez-nous</h3>
+                <div class="form-group">
+                    <label for="firstName">Votre prénom</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Votre nom</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="mail">Votre email</label>
+                    <input type="email" id="mail" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="message-mail" name="" id="messageMail" cols="70" rows="10"
+                        placeholder="Votre message"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input class="btn-submit" type="submit" value="Envoyer">
+                </div>
+            </form>
         </div>
 
-        <div class="form-group">
-            <input class="btn-submit" type="submit" value="Envoyer">
+        <div class="map">
+            <div class="maCarte" id="maCarte"></div>
         </div>
-    </form>
-</div>
-    <!-- <div class="construct">
-        <h1>Contactez-nous</h1>
-    </div> -->
 
-    <div class="map">
-        <div class="maCarte" id="maCarte"></div>
     </div>
 
- </div>  
 
 
-
-     <!-- ************************** FOOTER **************************** -->
-     <footer class="footer">
+    <!-- ************************** FOOTER **************************** -->
+    <footer class="footer">
         <!-- <div class="wave">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L503.10,82.41 L-1.97,84.38 Z" style="stroke: none; fill: #08f;"></path>
             </svg>
@@ -97,7 +98,7 @@
                     <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                     <path fill="#fff"
                         d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                    </svg>
+                </svg>
                 <p><span> Nous contacter</span> 25 rue des Muternes 02500 Mondrepuits</p>
             </div>
             <div>
@@ -105,7 +106,7 @@
                     <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                     <path fill="#fff"
                         d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                    </svg>
+                </svg>
                 <p> (+00) 0000 000 000</p>
             </div>
             <div>
@@ -113,7 +114,7 @@
                     <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                     <path fill="#fff"
                         d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
-                    </svg>
+                </svg>
                 <p><a href="#"> contact@auxptitoignons.fr</a></p>
             </div>
             <div class="icons">
@@ -121,7 +122,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="#1F79E5"
                             d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
-                        </svg>
+                    </svg>
                 </a>
                 <!-- <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -143,34 +144,52 @@
         </div>
     </footer>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
 
-  <!-- js Leaflet Marker -->
-  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <!-- js Leaflet Marker -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
     <!-- <script src="app.js"></script> -->
 
     <script>
         var villes = {
-          "Aux p'tits oignons": { "lat": 49.973417, "lon": 4.033231 }
+            "Aux p'tits oignons": {
+                "lat": 49.973417,
+                "lon": 4.033231
+            }
         };
         var tableauMarqueurs = [];
-    
+
         var carte = L.map('maCarte').setView([49.973417, 4.033231], 14);
         // 82
         L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-          attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
-          minZoom: 1,
-          maxZoom: 20
+            attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+            minZoom: 1,
+            maxZoom: 20
         }).addTo(carte);
-    
+
         var marker = L.marker([49.973417, 4.033231]).addTo(carte);
         // Adding popup to the marker
         marker.bindPopup('Aux p\'tits oignons').openPopup();
-         marker.addTo(map); // Adding marker to the map
-      </script>
-    
+        marker.addTo(carte); // Adding marker to the map
+    </script>
+
+    <script>
+        const inputs = document.querySelectorAll('input');
+
+        for (let i = 0; i < inputs.length; i++) {
+            let field = inputs[i];
+            field.addEventListener('input', (e) => {
+                if (e.target.value != "") {
+                    e.target.parentNode.classList.add('animation');
+                } else if (e.target.value == "") {
+                    e.target.parentNode.classList.remove('animation');
+                }
+            })
+        }
+    </script>
+
 </body>
 
 </html>
