@@ -27,11 +27,7 @@
             </div>
         </nav>
         <img class="home-banner" src="./img/home-banner.jpg" alt="">
-        <!-- <button type="button" aria-label="toggle curtain navigation" class="nav-toggler">
-            <span class="line l1"></span>
-            <span class="line l2"></span>
-            <span class="line l3"></span>
-        </button> -->
+
     </header>
     <div class="sprite">
         <div class="cat"></div>
@@ -41,234 +37,439 @@
 
     <section class="home">
         <h1>Les produits de la semaine</h1>
+        <img class="modal-btn modal-trigger" src="./img/panier.svg" alt="">
     </section>
 
     <section class="container-list">
 
         <div class="product-list">
-            <img src="./img/legumes/Blette-300x210.jpg" alt="">
+            <div class="img-product">
+                <img src="./img/legumes/Blette-300x210.jpg" alt="">
+            </div>
             <div class="contents-boxx">
-                <h4 class="name">Blette</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>La botte</p>
+                <div class="produit">
+                    <h4 class="name">Blette</h4>
+                    <div class="price">
+                        <input class="price-by-product" type="text" value = "5.23" disabled="disabled">
+                        <p>€</p>
+                        <p>La botte</p>
+                    </div>
                 </div>
-                <div class="btn-add">
-                    <a href="#">Ajouter au panier</a>
+                <div class="comment">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At dolore dolores aliquid facere repellendus illo.</p>
+                </div>
+                <div class="quantity">
+                    <button class="btnLess">-</button>
+                    <input class="quantityProduct" type="text">
+                    <button class="btnMore">+</button>
+                </div>
+                <div class="total">
+                    <p class="total-by-product"></p>
                 </div>
             </div>
         </div>
+        <!-- <div class="separator"></div> -->
+        
+        <div class="product-list">
+            <div class="img-product">
 
-        <!-- <div class="product-list">
-            <img src="./img/legumes/Choux-frise.jpg" alt="">
-            <div class="content-box">
+                <img src="./img/legumes/Choux-frise.jpg" alt="">
+            </div>
+        <div class="contents-boxx">
+            <div class="produit">
                 <h4 class="name">Choux frisé</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
+                <input class="price-by-product" type="number" value = "3">
+                <p>Pièce</p>
+            </div>
+            <div class="comment">
+                <p></p>
+            </div>
+            <div class="quantity">
+                <button class="btnLess">-</button>
+                <input class="quantityProduct" type="text">
+                <button class="btnMore">+</button>
+            </div>
+            <div class="total">
+                <p class="total-by-product"></p>
             </div>
         </div>
-
-        <div class="product-list">
+    </div>
+    <!-- <div class="separator"></div> -->
+    <div class="product-list">
+        <div class="img-product">
             <img src="./img/legumes/Celeri-rave-600x400.jpg" alt="">
-            <div class="content-box">
-                <h4 class="name">Céléri rave</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="product-list">
+        </div>
+        <div class="contents-boxx">
+            <div class="produit">
+                <h4 class="name">Céléri rave</h4>
+                <p class="price-by-product">5</p>
+                <p>La botte</p>
+            </div>
+            <div class="comment">
+                <p></p>
+            </div>
+            <div class="quantity">
+                <button class="btnLess">-</button>
+                <input class="quantityProduct" type="text">
+                <button class="btnMore">+</button>
+            </div>
+            <div class="total">
+                <p class="total-by-product"></p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="separator"></div> -->
+    <div class="product-list">
+        <div class="img-product">
             <img src="./img/legumes/Carottes-100x100.jpg" alt="">
-            <div class="content-box">
+
+        </div>
+        <div class="contents-boxx">
+            <div class="produit">
                 <h4 class="name">Carotte</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
+                <p class="price-by-product">5</p>
+                <p>La botte</p>
+            </div>
+            <div class="comment">
+                <p></p>
+            </div>
+            <div class="quantity">
+                <button class="btnLess">-</button>
+                <input class="quantityProduct" type="text">
+                <button class="btnMore">+</button>
+            </div>
+            <div class="total">
+                <p class="total-by-product"></p>
             </div>
         </div>
-        <div class="product-list">
+    </div>
+    <!-- <div class="separator"></div> -->
+    <div class="product-list">
+        <div class="img-product">
             <img src="./img/legumes/choux-kale-150x150.jpg" alt="">
-            <div class="content-box">
+
+        </div>
+        <div class="contents-boxx">
+            <div class="produit">
                 <h4 class="name">Choux kale</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
+                <p class="price-by-product">5</p>
+                <p>La botte</p>
+            </div>
+            <div class="comment">
+                <p></p>
+            </div>
+            <div class="quantity">
+                <button class="btnLess">-</button>
+                <input class="quantityProduct" type="text">
+                <button class="btnMore">+</button>
+            </div>
+            <div class="total">
+                <p class="total-by-product"></p>
             </div>
         </div>
-        <div class="product-list">
+    </div>
+    <!-- <div class="separator"></div> -->
+    <div class="product-list">
+        <div class="img-product">
             <img src="./img/legumes/Choux-vert-150x150.jpg" alt="">
-            <div class="content-box">
+
+        </div>
+        <div class="contents-boxx">
+            <div class="produit">
                 <h4 class="name">Choux vert</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
+                <p class="price-by-product">5</p>
+                <p>La botte</p>
+            </div>
+            <div class="comment">
+                <p></p>
+            </div>
+            <div class="quantity">
+                <button class="btnLess">-</button>
+                <input class="quantityProduct" type="text">
+                <button class="btnMore">+</button>
+            </div>
+            <div class="total">
+                <p class="total-by-product"></p>
             </div>
         </div>
-        <div class="product-list">
+    </div>
+    <!-- <div class="separator"></div> -->
+    <div class="product-list">
+        <div class="img-product">
             <img src="./img/legumes/Concombres-150x150.jpg" alt="">
-            <div class="content-box">
+
+        </div>
+        <div class="contents-boxx">
+            <div class="produit">
                 <h4 class="name">Concombre</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
+                <p class="price-by-product">5</p>
+                <p>La botte</p>
+            </div>
+            <div class="comment">
+                <p></p>
+            </div>
+            <div class="quantity">
+                <button class="btnLess">-</button>
+                <input class="quantityProduct" type="text">
+                <button class="btnMore">+</button>
+            </div>
+            <div class="total">
+                <p class="total-by-product"></p>
             </div>
         </div>
-        <div class="product-list">
+    </div>
+    <!-- <div class="separator"></div> -->
+    <div class="product-list">
+        <div class="img-product">
             <img src="./img/legumes/Navet.jpg" alt="">
-            <div class="content-box">
+
+        </div>
+        <div class="contents-boxx">
+            <div class="produit">
                 <h4 class="name">Navet</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
+                <p class="price-by-product">5</p>
+                <p>La botte</p>
+            </div>
+            <div class="comment">
+                <p></p>
+            </div>
+            <div class="quantity">
+                <button class="btnLess">-</button>
+                <input class="quantityProduct" type="text">
+                <button class="btnMore">+</button>
+            </div>
+            <div class="total">
+                <p class="total-by-product"></p>
             </div>
         </div>
-        <div class="product-list">
-            <img src="./img/legumes/Oignon-jaune-150x150.jpg" alt="">
-            <div class="content-box">
-                <h4 class="name">Oignon jaune</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
-            </div>
+    </div>
+<!-- <div class="separator"></div> -->
+<div class="product-list">
+    <div class="img-product">
+        <img src="./img/legumes/Oignon-jaune-150x150.jpg" alt="">
+
+    </div>
+    <div class="contents-boxx">
+        <div class="produit">
+            <h4 class="name">Oignon jaune</h4>
+            <p class="price-by-product">5</p>
+            <p>La botte</p>
         </div>
-        <div class="product-list">
-            <img src="./img/legumes/Oignon-rouge.jpg" alt="">
-            <div class="content-box">
-                <h4 class="name">Oigno rouge</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
-            </div>
+        <div class="comment">
+            <p></p>
         </div>
-        <div class="product-list">
-            <img src="./img/legumes/Patidou.jpg" alt="">
-            <div class="content-box">
-                <h4 class="name">Patidou</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
-            </div>
+        <div class="quantity">
+            <button class="btnLess">-</button>
+            <input class="quantityProduct" type="text">
+            <button class="btnMore">+</button>
         </div>
-        <div class="product-list">
-            <img src="./img/legumes/Patisson.jpg" alt="">
-            <div class="content-box">
-                <h4 class="name">Patisson</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
-            </div>
+        <div class="total">
+            <p class="total-by-product"></p>
         </div>
-        <div class="product-list">
-            <img src="./img/legumes/Potimarron.jpg" alt="">
-            <div class="content-box">
-                <h4 class="name">Potimarron</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
-            </div>
+    </div>
+</div>
+<!-- <div class="separator"></div> -->
+<div class="product-list">
+    <div class="img-product">
+        <img src="./img/legumes/Oignon-rouge.jpg" alt="">
+
+    </div>
+    <div class="contents-boxx">
+        <div class="produit">
+            <h4 class="name">Oignon rouge</h4>
+            <p class="price-by-product">5</p>
+            <p>La botte</p>
         </div>
-        <div class="product-list">
-            <img src="./img/legumes/Pomme-de-terre-nouvelle-jaune.jpg" alt="">
-            <div class="content-box">
-                <h4 class="name">Pomme de terre nouvelle jaune</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
-            </div>
+        <div class="comment">
+            <p></p>
         </div>
-        <div class="product-list">
-            <img src="./img/legumes/Poivrons.jpg" alt="">
-            <div class="content-box">
-                <h4 class="name">Poivron</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
-            </div>
+        <div class="quantity">
+            <button class="btnLess">-</button>
+            <input class="quantityProduct" type="text">
+            <button class="btnMore">+</button>
         </div>
-        <div class="product-list">
-            <img src="./img/legumes/Persil-frise.jpg" alt="">
-            <div class="content-box">
-                <h4 class="name">Persil frisé</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
-            </div>
+        <div class="total">
+            <p class="total-by-product"></p>
         </div>
-        <div class="product-list">
-            <img src="./img/legumes/Noix-300x183.jpg" alt="">
-            <div class="content-box">
-                <h4 class="name">Noix</h4>
-                <div class="price">
-                    <p>5 €</p>
-                    <p>Pièce</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Ajouter au panier</a>
-                </div>
-            </div>
-        </div> -->
+    </div>
+</div>
+<!-- <div class="separator"></div> -->
+<div class="product-list">
+    <div class="img-product">
+        <img src="./img/legumes/Patidou.jpg" alt="">
+
+    </div>
+    <div class="contents-boxx">
+        <div class="produit">
+            <h4 class="name">Patidou</h4>
+            <p class="price-by-product">5</p>
+            <p>La botte</p>
+        </div>
+        <div class="comment">
+            <p></p>
+        </div>
+        <div class="quantity">
+            <button class="btnLess">-</button>
+            <input class="quantityProduct" type="text">
+            <button class="btnMore">+</button>
+        </div>
+        <div class="total">
+            <p class="total-by-product"></p>
+        </div>
+    </div>
+</div>
+<!-- <div class="separator"></div> -->
+<div class="product-list">
+    <div class="img-product">
+        <img src="./img/legumes/Patisson.jpg" alt="">
+
+    </div>
+    <div class="contents-boxx">
+        <div class="produit">
+            <h4 class="name">Patisson</h4>
+            <p class="price-by-product">5</p>
+            <p>La botte</p>
+        </div>
+        <div class="comment">
+            <p></p>
+        </div>
+        <div class="quantity">
+            <button class="btnLess">-</button>
+            <input class="quantityProduct" type="text">
+            <button class="btnMore">+</button>
+        </div>
+        <div class="total">
+            <p class="total-by-product"></p>
+        </div>
+    </div>
+</div>
+<!-- <div class="separator"></div> -->
+<div class="product-list">
+    <div class="img-product">
+        <img src="./img/legumes/Potimarron.jpg" alt="">
+
+    </div>
+    <div class="contents-boxx">
+        <div class="produit">
+            <h4 class="name">Potimarron</h4>
+            <p class="price-by-product">5</p>
+            <p>La botte</p>
+        </div>
+        <div class="comment">
+            <p></p>
+        </div>
+        <div class="quantity">
+            <button class="btnLess">-</button>
+            <input class="quantityProduct" type="text">
+            <button class="btnMore">+</button>
+        </div>
+        <div class="total">
+            <p class="total-by-product"></p>
+        </div>
+    </div>
+</div>
+<!-- <div class="separator"></div> -->
+<div class="product-list">
+    <div class="img-product">
+        <img src="./img/legumes/Pomme-de-terre-nouvelle-jaune.jpg" alt="">
+
+    </div>
+    <div class="contents-boxx">
+        <div class="produit">
+            <h4 class="name">Pomme de terre nouvelle jaune</h4>
+            <p class="price-by-product">5</p>
+            <p>La botte</p>
+        </div>
+        <div class="comment">
+            <p></p>
+        </div>
+        <div class="quantity">
+            <button class="btnLess">-</button>
+            <input class="quantityProduct" type="text">
+            <button class="btnMore">+</button>
+        </div>
+        <div class="total">
+            <p class="total-by-product"></p>
+        </div>
+    </div>
+</div>
+<!-- <div class="separator"></div> -->
+<div class="product-list">
+    <div class="img-product">
+        <img src="./img/legumes/Poivrons.jpg" alt="">
+
+    </div>
+    <div class="contents-boxx">
+        <div class="produit">
+            <h4 class="name">Poivrons</h4>
+            <p class="price-by-product">5</p>
+            <p>La botte</p>
+        </div>
+        <div class="comment">
+            <p></p>
+        </div>
+        <div class="quantity">
+            <button class="btnLess">-</button>
+            <input class="quantityProduct" type="text">
+            <button class="btnMore">+</button>
+        </div>
+        <div class="total">
+            <p class="total-by-product"></p>
+        </div>
+    </div>
+</div>
+<!-- <div class="separator"></div> -->
+<div class="product-list">
+    <div class="img-product">
+        <img src="./img/legumes/Persil-frise.jpg" alt="">
+
+    </div>
+    <div class="contents-boxx">
+        <div class="produit">
+            <h4 class="name">Persil frisé</h4>
+            <p class="price-by-product">5</p>
+            <p>La botte</p>
+        </div>
+        <div class="comment">
+            <p></p>
+        </div>
+        <div class="quantity">
+            <button class="btnLess">-</button>
+            <input class="quantityProduct" type="text">
+            <button class="btnMore">+</button>
+        </div>
+        <div class="total">
+            <p class="total-by-product"></p>
+        </div>
+    </div>
+</div>
+<!-- <div class="separator"></div> -->
+<div class="product-list">
+    <div class="img-product">
+        <img src="./img/legumes/Noix-300x183.jpg" alt="">
+
+    </div>
+    <div class="contents-boxx">
+        <div class="produit">
+            <h4 class="name">Noix</h4>
+            <p class="price-by-product">5</p>
+            <p>La botte</p>
+        </div>
+        <div class="comment">
+            <p></p>
+        </div>
+        <div class="quantity">
+            <button class="btnLess">-</button>
+            <input class="quantityProduct" type="text">
+            <button class="btnMore">+</button>
+        </div>
+        <div class="total">
+            <p class="total-by-product"></p>
+        </div>
+    </div>
+</div>
+
     </section>
 
 
