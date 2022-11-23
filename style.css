@@ -219,7 +219,9 @@ body {
   width: 100%;
   /* filter: opacity(.5); */
   height: 20%;
+  z-index: 100;
 }
+
 .home{
   position: fixed;
   top: 7rem;
@@ -322,20 +324,20 @@ nav a {
   width: 3rem;
   height: 3rem;
   position: fixed;
-  padding: 10px;
-  top: 13rem;
+  padding: 5px;
+  top: 16rem;
   right: 4rem;
   border-radius: 50%;
   
   border: solid 1px var(--orange-charte);
   background-color:  var(--yellow-color);
   box-shadow: 0 0 0 0  var(--orange-charte);
-  animation: pulse 1.9s infinite;
+  animation: pulse 1.2s infinite;
 }
 
 @keyframes pulse{
    to{
-       box-shadow: 0 0 0 0.5rem rgba(234, 100, 10, 0.1);
+       box-shadow: 0 0 0 1rem rgba(245, 108, 3, 0.1);
    }
 }
 
@@ -364,6 +366,7 @@ nav a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 15rem;
 }
 
 .container {
@@ -626,7 +629,7 @@ nav a {
   height: 100px;
   position: absolute;
   left: -190px;
-  top: 238px;
+  top: 98px;
   background-image: url("./img/sprite/catSprite.png");
   animation: walkCat .5s steps(13) 7,
     run 3s linear 1;
@@ -711,8 +714,8 @@ nav a {
   margin-bottom: 2rem;
   /* background: #d8d7d8; */
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  
+  /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .product-list .img-product {
@@ -734,7 +737,7 @@ nav a {
   width: 100%;
   height: 100%;
   margin-left: 1rem;
-  z-index: -1;
+  z-index: 0;
 }
 
 .product-list .contents-boxx .produit h4{

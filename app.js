@@ -34,7 +34,7 @@ for (let i = 0; i < btnsMore.length; i++) {
     self.addEventListener('click', function (event) { 
         totalProduct += 1;
         q.value = totalProduct;
-        t.innerHTML = p.value * q.value +" €";
+        t.innerHTML = (p.value * q.value).toFixed(2) +" €";
     }, false);
 }
 
