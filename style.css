@@ -224,7 +224,8 @@ body {
 
 .home{
   position: fixed;
-  top: 7rem;
+  z-index: 101;
+  top: 6rem;
   margin-left: 2rem;
   display: flex;
 }
@@ -629,11 +630,11 @@ nav a {
   height: 100px;
   position: absolute;
   left: -190px;
-  top: 98px;
+  top: 148px;
   background-image: url("./img/sprite/catSprite.png");
   animation: walkCat .5s steps(13) 7,
     run 3s linear 1;
-
+z-index: 102;
 }
 
 @keyframes walkCat {
@@ -695,7 +696,79 @@ nav a {
     transform: translateX(2500px);
   } 
 } */
+/* ///////////////////////////////////////// CHOOSE PRODUCTS ///////////////////////////////// */
+.choose{
+  position: fixed;
+  margin-top: -6rem;
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  height: 100vh;
+  /* background: #0099ff; */
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
 
+.choose p{
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Kaushan Script', cursive;
+}
+.choose svg{
+  height: 1.5rem;
+  margin: 1rem 0 1rem 0;
+}
+
+
+
+ul{
+  position: absolute;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+li{
+  position: relative;
+  list-style: none;
+  margin: 5px;
+  border-radius: 10px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+li:hover{
+  background-color: var(--orange-charte);
+  color: #fff;
+}
+span{
+  font-weight: 100;
+  position: absolute;
+  left: 100px;
+  /* text-transform: uppercase; */
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+span::before{
+  content: '';
+  position: absolute;
+  left: -20px;
+  transition: 0.4s;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #2f2f2f;
+  border-bottom: 10px solid transparent;
+}
+li:hover span{
+  visibility: visible;
+  opacity: 1;
+  padding: 10px;
+  background-color: #2f2f2f;
+  border-radius: 10px;
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.2);
+}
 /* ///////////////////////////////////////// PRODUCTS LIST ///////////////////////////////// */
 .container-list {
   display: flex;
