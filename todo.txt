@@ -11,3 +11,7 @@ aromates
 gestion des stocks
 
 page a propos
+
+vente pagnier ?
+
+heure d'ouverture
