@@ -11,13 +11,7 @@
 
 <body>
     <header>
-        <!-- <nav>
-            <a href="">Accueil</a>
-            <a href="">Les p'tits oignons</a>
-            <a href="">Connexion</a>
-            <a href="">Contact</a>
-        </nav> -->
-        <nav id="navigation">
+        <nav class="navbar">
             <a href="index.html">
                 <div class="logo">
                     <img src="./img/logo-apo.png" alt="">
@@ -25,15 +19,58 @@
                 </div>
             </a>
             <div class="menu">
-                <a href="index.html" class="lienNav" onclick="toggleNav()">Accueil</a>
-                <a href="about.html" class="lienNav" onclick="toggleNav()">Nos valeurs</a>
-                <a href="products.html" class="lienNav" onclick="toggleNav()">Nos produits</a>
-                <a href="contact.html" class="lienNav" onclick="toggleNav()">Contact</a>
-                <a href="#" class="lienNav" onclick="toggleNav()">Connexion</a>
-            <!-- <a class="icon" id="icon" onclick="toggleNav()"><i class="fas fa-bars"></i></a> -->
-            </div>
-        </nav>
-        <img class="home-banner" src="./img/home-banner.jpg" alt="">
+            <ul class="navbar-links">
+              <li class="navbar-dropdown">
+                <a href="#">Accueil</a>
+                <!-- <div class="dropdown">
+                  <a href="#">Tomato Soup</a>
+                  <a href="#">Veg Manchow Soup</a>
+                  <a href="#">Veg Hot Soup</a>
+                </div> -->
+              </li>
+              <li class="navbar-dropdown">
+                <a href="#">Nos valeurs</a>
+                <!-- <div class="dropdown">
+                  <a href="#">Ladoo</a>
+                  <a href="#">Besan Ladoo</a>
+                  <a href="#">Ghee Besan Ladoo</a>
+                  <a href="#">Nariyal Ladoo</a>
+                  <a href="#">Kaju Katli</a>
+                  <a href="#">Rasgulla</a>
+                </div> -->
+              </li>
+              <li class="navbar-dropdown">
+                <a href="#">Nos produits</a>
+                <div class="dropdown">
+                  <a href="#">Légumes</a>
+                  <a href="#">Fruits Roti</a>
+                  <a href="#">Epicerie</a>
+                </div>
+              </li>
+              <li class="navbar-dropdown">
+                <a href="#">Contact</a>
+                <!-- <div class="dropdown">
+                  <a href="#">Plain Rice</a>
+                  <a href="#">Veg Pulao</a>
+                  <a href="#">Veg Biryani</a>
+                  <a href="#">Paneer Biryani</a>
+                  <a href="#">Lemon Rice</a>
+                  <a href="#">Veg Kashmiri Pulao</a>
+                </div> -->
+              </li>
+              <li class="navbar-dropdown">
+                <a href="#">👤 Mon compte</a>
+                <div class="dropdown">
+                  <a href="#">Connexion</a>
+                  <a href="#">Mon profil</a>
+                  <!-- <a href="#">Veg Garlic</a> -->
+                  <a href="#">Déconnexion</a>
+                </div>
+              </li>
+            </ul>
+        </div>
+          </nav>
+        <!-- <img class="home-banner" src="./img/home-banner.jpg" alt=""> -->
 
     </header>
     <div class="sprite">
@@ -69,6 +106,7 @@
         </div>
         
       </div>
+	  <!--https://codepen.io/iPawan/pen/rNNGEzw -->
 </div>
 <!-- ************************************************************************* -->
 

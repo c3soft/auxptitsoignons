@@ -721,11 +721,11 @@ z-index: 102;
 
 
 
-ul{
+/* ul{
   position: absolute;
   width: 100%;
   margin-top: 2.5rem;
-}
+} */
 
 li{
   position: relative;
@@ -1156,4 +1156,89 @@ li:hover span{
   font-weight: 700;
   background-color: #f9b02d;
   border-radius: 7px;
+}
+
+
+
+/* |||||||||||||||||||||||||||||||||||||||| nav animation |||||||||||||||||||||||||||| */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  width: 100vw;
+  /* background-color: #fff;
+  box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3); */
+  /* position: relative;
+  padding: 0px 70px; */
+  background-color: #fff;
+
+
+  position: fixed;
+  top: 0;
+  z-index: 140;
+  /* background-color: #ebebebd3; */
+   background: linear-gradient(to right, #fff, rgba(235, 235, 235, 0));
+  height: 8rem;
+ /* clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 55% 70%, 50% 90%, 45% 70%, 0% 70%); */
+  transition: all 0.4s ease-in-out;
+  /* Anim GreenSock */
+  /* opacity: 1; */
+}
+/* .navbar-logo {
+  color: #ff3f34;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 0px 20px;
+} */
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+}
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: #444;
+  padding: 10px 20px;
+  font-weight: 700;
+  transition: 0.4s all;
+}
+
+.navbar-links li.navbar-dropdown {
+  position: relative;
+}
+
+.navbar-links li.navbar-dropdown:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.navbar-links li.navbar-dropdown .dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding: 20px 0;
+  top: 100%;
+  transform: translateY(50px);
+  left: 0;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  z-index: 111;
+  transition: 0.4s all;
+}
+.navbar-links li.navbar-dropdown .dropdown a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+.navbar-dropdown .dropdown a:hover {
+  padding-left: 30px;
+}
+.navbar-links li a:hover {
+  color: #ff3f34;
 }
