@@ -3,6 +3,13 @@
 
 <head>
     <title>Aux p'tits oignons</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -22,7 +29,7 @@
             <div class="menu">
                 <a href="index.html" class="lienNav" onclick="toggleNav()">Accueil</a>
                 <a href="about.html" class="lienNav" onclick="toggleNav()">Nos valeurs</a>
-                <a href="products.html" class="lienNav" onclick="toggleNav()">Nos produits</a>
+                <a href="products-list.html" class="lienNav" onclick="toggleNav()">Nos produits</a>
                 <a href="contact.html" class="lienNav" onclick="toggleNav()">Contact</a>
                 <a href="login.html" class="lienNav" onclick="toggleNav()">Connexion</a>
                 <!-- <a class="icon" id="icon" onclick="toggleNav()"><i class="fas fa-bars"></i></a> -->
@@ -121,9 +128,16 @@
                 </div>
 
                 <div class="quantity">
-                    <button class="btnLess">-</button>
+                    <div class="box">
+                        <div class="slider">
+                            <input id="range" type="range" min="0" max="100" value="20">
+                        </div>
+                        <!-- <div class="value">100</div> -->
+                        <input class="value quantityProduct" type="text">
+                    </div>
+                    <!-- <button class="btnLess">-</button>
                     <input class="quantityProduct" type="text">
-                    <button class="btnMore">+</button>
+                    <button class="btnMore">+</button> -->
                 </div>
                 
                 <div class="total">

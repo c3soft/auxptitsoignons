@@ -1,17 +1,11 @@
-Fruits : tomate, courge, poivron
-Feuilles : salade, épinard, chou
-Racines : carotte, radis, navet
-Tubercules : pomme de terre
-Bulbes : ail, oignon, échalote
-Légumineuses : pois, haricot
-Champignons frais
-aromates
-épicerie
+gestion des stocks ?
 
-gestion des stocks
+Livraison ?
 
-page a propos
-
-vente pagnier ?
+selecteur poids
 
 heure d'ouverture
+
+Réception marché ?
+
+livraison ?

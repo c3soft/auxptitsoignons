@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Aux p'tits oignons</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/sign.css">
+</head>
+
+<body>
+    <!-- <header>
+        <nav id="homeNavigation">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="./img/logo-apo.png" alt="">
+                    <h1>Aux p'tits oignons</h1>
+                </div>
+            </a>
+            <div class="menu">
+                <a href="index.html" class="lienNav" onclick="toggleNav()">Accueil</a>
+                <a href="about.html" class="lienNav" onclick="toggleNav()">Nos valeurs</a>
+                <a href="products.html" class="lienNav" onclick="toggleNav()">Nos produits</a>
+                <a href="contact.html" class="lienNav" onclick="toggleNav()">Contact</a>
+                <a href="#" class="lienNav" onclick="toggleNav()">Connexion</a>
+            </div>
+        </nav>
+    </header> -->
+    <div class="container right-panel-active">
+        <!-- Sign Up -->
+        <div class="container__form container--signup">
+            <form action="#" class="form" id="form1">
+                <h2 class="form__title">Sign Up</h2>
+                <input type="text" placeholder="User" class="input" />
+                <input type="email" placeholder="Email" class="input" />
+                <input type="password" placeholder="Password" class="input" />
+                <button class="btn">Sign Up</button>
+            </form>
+        </div>
+    
+        <!-- Sign In -->
+        <div class="container__form container--signin">
+            <form action="#" class="form" id="form2">
+                <h2 class="form__title">Sign In</h2>
+                <input type="email" placeholder="Email" class="input" />
+                <input type="password" placeholder="Password" class="input" />
+                <a href="#" class="link">Forgot your password?</a>
+                <button class="btn">Sign In</button>
+            </form>
+        </div>
+    
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <button class="btn" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const signInBtn = document.getElementById("signIn");
+const signUpBtn = document.getElementById("signUp");
+const fistForm = document.getElementById("form1");
+const secondForm = document.getElementById("form2");
+const container = document.querySelector(".container");
+
+signInBtn.addEventListener("click", () => {
+	container.classList.remove("right-panel-active");
+});
+
+signUpBtn.addEventListener("click", () => {
+	container.classList.add("right-panel-active");
+});
+
+fistForm.addEventListener("submit", (e) => e.preventDefault());
+secondForm.addEventListener("submit", (e) => e.preventDefault());
+    </script>
+  </body>
+</html>
+
+<!-- https://www.youtube.com/watch?v=piG91X4sV2U -->

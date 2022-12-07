@@ -75,3 +75,13 @@ function addProduct() {
 //     quantityProduct.value = totalProduct;
 // }
 
+const slider = document.querySelector("#range");
+const value = document.querySelector(".value");
+// const qq = document.querySelector(".quantityProducttt")
+
+value.textContent = slider.value;
+value.value = slider.value;
+slider.oninput = function() {
+    value.textContent = this.value;
+    value.value = this.value;
+}
