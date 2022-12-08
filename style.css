@@ -705,7 +705,7 @@ z-index: 102;
 /* ///////////////////////////////////////// CHOOSE PRODUCTS ///////////////////////////////// */
 .choose{
   position: fixed;
-  margin-top: -4rem;
+  margin-top: 12rem;
   display: flex;
   flex-direction: column;
   width: 5rem;
