@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+:root {
+  --orange-charte: #D2974E;
+  --vert-charte: #529C3D;
+  --color-text: #333333;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ///////////////////////////// HOME PAGE ///////////////////////////////// */
+
+#homeNavigation{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 140;
+  width: 100%;
+  background: linear-gradient(to right, #fff, rgba(235, 235, 235, 0.148));
+  height: 7rem;
+  /* clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 55% 70%, 50% 90%, 45% 70%, 0% 70%); */
+  transition: all 0.4s ease-in-out;
+}
+
+#homeNavigation .menu a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  line-height: 5.5rem;
+  font-family: 'Kaushan Script', cursive;
+  color:#eeeeee;
+}
+
+#myVideo {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.overlay-home {
+  background-color: rgba(46, 64, 87, 0.57);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0;
+}
+
+/* *********************************** */
+.slogan {
+  font-size: 4.5rem;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 10px;
+  /* font-family: 'Kaushan Script', cursive; */
+  font-family: 'Lato', sans-serif;
+  color: #fdfdfdbc;
+}
+
+.container-slogan {
+  position: fixed;
+  bottom: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6rem;
+}
+
+.btn-appel-action {
+  display: inline-block;
+  width: 21rem;
+  margin-top: 20rem;
+  text-align: center;
+  /* background-color: #d2974e55; */
+  border: 1px solid #ffffff8f;
+  font-family: 'Roboto', sans-serif;
+  color: #fdfdfd;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 5px 10px 5px 10px;
+  transition: .7s ease-in-out;
+}
+
+.btn-appel-action:hover {
+  /* font-weight: 900; */
+  /* color: transparent; */
+  background-color: #d2974e55;
+  /* border: 1px solid #ffffff8f; */
+  border: 1px solid var(--orange-charte);
+}
+
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+.main-logo{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding-left: 27px;
+}
+
+.main-logo p{
+    color: #333333;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+.logo {
+  /* position: absolute; */
+  top: .1rem;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 5rem;
+}
+
+.logo h1 {
+  margin-left: 2rem;
+  padding-right: 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: 'Pacifico', cursive;
+  color: var(--orange-charte);
+}
+
+.menu {
+  margin-right: 2rem;
+}
+
+/* /////////////////////////////////////////////////// */
+
+
+/* |||||||||||||||||||||||||||||||||||||||| nav animation |||||||||||||||||||||||||||| */
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  font-family: 'Kaushan Script', cursive;
+  color: #444;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  padding: 20px 20px;
+  font-weight: 700;
+  transition: 0.4s all;
+  color: #444;
+}
+
+.navbar-links li.navbar-dropdown {
+  position: relative;
+}
+
+.navbar-links li.navbar-dropdown:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.navbar-links li.navbar-dropdown .dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding: 20px 0;
+  top: 100%;
+  transform: translateY(50px);
+  left: 0;
+  width: 250px;
+  background-color: #cacaca;
+  box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  z-index: 111;
+  border-radius: 10px;
+  transition: 0.4s all;
+}
+.navbar-links li.navbar-dropdown .dropdown a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+.navbar-dropdown .dropdown a:hover {
+  padding-left: 30px;
+}
+.navbar-links li a:hover {
+  color: var(--orange-charte);
+}
+
+/* //////////////////////////////// round /////////////////////////////// */
+.round-text{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  /* background: red; */
+  animation: turn 7.5s linear infinite;
+}
+
+.round-text .text{
+    position: absolute;
+    transform: translate(-50% -50%);
+    color: #cacaca;
+    font-family: roboto;
+    user-select: none;
+    pointer-events: none;
+    
+}
+
+@keyframes turn{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.round-text .text span{
+    position: absolute;
+    text-transform: uppercase;
+    display: inline-block;
+    transform-origin: 0 100px;
+}

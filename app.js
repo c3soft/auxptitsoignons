@@ -55,15 +55,6 @@ for (let i = 0; i < btnsless.length; i++) {
 
 
 
-
-
-
-
-
-
-
-
-
 function addProduct() {
     totalProduct += 1;
     quantityProduct.value = totalProduct;
