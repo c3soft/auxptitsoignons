@@ -76,3 +76,6 @@ slider.oninput = function() {
     value.textContent = this.value;
     value.value = this.value;
 }
+
+
+// ****************** Gallery
